@@ -25,7 +25,8 @@ return require('packer').startup(function(use)
 	    end,
       })
 
-
+    use('saadparwaiz1/cmp_luasnip')
+    use('numToStr/Comment.nvim')
     use('rafamadriz/friendly-snippets') 
     use('theprimeagen/vim-be-good')
 	  use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
@@ -36,6 +37,28 @@ return require('packer').startup(function(use)
     use('nvim-tree/nvim-web-devicons')
 	  use('mbbill/undotree')
 	  use('tpope/vim-fugitive')
+
+    use {
+          'hrsh7th/nvim-cmp',
+          config = function ()
+            require'cmp'.setup {
+              snippet = {
+                expand = function(args)
+                  require'luasnip'.lsp_expand(args.body)
+                end
+              },
+
+              sources = {
+                { name = 'luasnip' },
+                -- more sources
+              },
+            }
+          end
+    }
+    use{
+      'folke/todo-comments.nvim', 
+      dependencies = { "nvim-lua/plenary.nvim" },
+    }; 
       use {
 	      'VonHeikemen/lsp-zero.nvim',
 	    branch = 'v1.x',
@@ -58,4 +81,6 @@ return require('packer').startup(function(use)
 		  {'rafamadriz/friendly-snippets'},
 	  }
     }
+
+    use('folke/zen-mode.nvim')
 end)
