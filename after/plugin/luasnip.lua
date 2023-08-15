@@ -17,19 +17,19 @@ ls.config.set_config({
 
 -- Key Maps
 
-vim.keymap.set({ "i", "s" }, "<a-p>", function()
+vim.keymap.set({ "i", "s" }, "<C-p>", function()
   if ls.expand_or_jumpable() then 
       ls.expand()
    end
 end)
 
-vim.keymap.set({ "i", "s" }, "<a-k>", function()
+vim.keymap.set({ "i", "s" }, "<C-k>", function()
   if ls.jumpable(1) then 
     ls.jump(1)
   end
 end)
 
-vim.keymap.set({ "i", "s" }, "<a-j>", function()
+vim.keymap.set({ "i", "s" }, "<C-j>", function()
   if ls.jumpable(-1) then 
     ls.jump(-1)
   end

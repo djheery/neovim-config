@@ -8,7 +8,7 @@ local c = ls.choice_node
 local f = ls.function_node
 local sn = ls.snippet_node 
 
-local fmt = require("luasnip.extras.fmt")
+local fmt = require("luasnip.extras.fmt").fmt
 local rep = require("luasnip.extras"); 
 
 local snippets, autosnippets = {}, {}
@@ -45,6 +45,51 @@ local hackComment = s(
   }
 )
 
+local methodComment = s(
+  "_mcom",
+  fmt([[
+    /* 
+     * {}
+     * 
+     * @param: {}
+     * @returns: {}
+     */
+  ]], {i(1, "Details about your method"), i(2, "myParam"), i(3, "This returns")})
+)
+
+local typeComment = s(
+  "_tcom",
+  fmt([[
+   // A type for {}
+  ]], 
+  {i(1, "type definition")})
+)
+
+local interfaceComment = s(
+  "_icom",
+  fmt([[
+    /* 
+     * {}
+     * 
+     * @param: {}
+     */
+  ]], {i(1, "Details about your Interface"), i(2, "interfaceParam")})
+)
+
+local enumComment =  s(
+  "_encom",
+  fmt([[
+    /* 
+     * {}
+     */
+  ]], {i(1, "Details about your enum --maybe don't use?")})
+)
+
+
+table.insert(autosnippets, methodComment);
+table.insert(autosnippets, typeComment);
+table.insert(autosnippets, interfaceComment);
+table.insert(autosnippets, enumComment);
 table.insert(autosnippets, fixComment)
 table.insert(autosnippets, hackComment)
 table.insert(autosnippets, paramComment)
