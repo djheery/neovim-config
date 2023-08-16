@@ -35,7 +35,27 @@ vim.keymap.set({ "i", "s" }, "<C-j>", function()
   end
 end)
 
-ls.filetype_extend("javascriptreact", { "javascript", "js_comments" })
-ls.filetype_extend("javascript", {  "js_comments" })
-ls.filetype_extend("typescript", {  "js_comments" })
-ls.filetype_extend("typescriptreact", {  "js_comments" })
+ls.filetype_extend("javascriptreact", { 
+  "javascript", 
+  "js_comments", 
+  "javascriptreact"
+})
+
+ls.filetype_extend("javascript", {
+  "js_comments",
+  "javascript" 
+})
+
+ls.filetype_extend("typescript", {
+  "js_comments",
+  "javascript",
+  "typescript" 
+})
+
+ls.filetype_extend("typescriptreact", {
+  "js_comments",
+  "javascript",
+  "typescript",
+  "javascriptreact",
+  "typescriptreact" 
+})

@@ -14,7 +14,7 @@ local rep = require("luasnip.extras");
 local snippets, autosnippets = {}, {}
 
 local fconst = s(
-  "_ftconst", 
+  "_fconst", 
   fmt([[
   /* 
    * {}
@@ -34,6 +34,23 @@ local fconst = s(
   })
 )
 
+local _rmethod =  s(
+  "_rmethod", 
+  fmt([[
+    {}: () => {}
+  ]], { i(1, "foo"), i("bar") })
+  )
+
+local _keval = s(
+  "_keval", 
+  fmt([[ 
+   {}: {} 
+  ]], { i(1, "foo"), i(2, "'bar'")})
+)
+
+
+table.insert(autosnippets, _rmethod);
+table.insert(autosnippets, _keval);
 table.insert(autosnippets, fconst)
 
 return snippets, autosnippets
