@@ -48,7 +48,32 @@ local _keval = s(
   ]], { i(1, "foo"), i(2, "'bar'")})
 )
 
+local _string_literal = s(
+  "_$i", 
+  fmt([[ 
+    ${{{}}}
+  ]], { i(1, "myParam") })
+)
 
+local _string_literal_block = s(
+  "_$bi",
+  fmt([[ 
+    `${{{}}}`
+  ]], {i(1, "myParam") } )
+)
+
+local _string_literal_block_indented = s(
+  "_$bb", 
+  fmt([[
+    `
+      ${{{}}}
+    `
+  ]], { i(1, "myParam")})
+)
+
+table.insert(autosnippets, _string_literal);
+table.insert(autosnippets, _string_literal_block_indented);
+table.insert(autosnippets, _string_literal_block);
 table.insert(autosnippets, _rmethod);
 table.insert(autosnippets, _keval);
 table.insert(autosnippets, fconst)
