@@ -27,3 +27,6 @@ vim.opt.signcolumn = "yes";
 vim.opt.isfname:append("@-@")
 
 vim.g.mapleader = " ";
+
+vim.opt.termguicolors = true;
+
