@@ -6,10 +6,18 @@
 ]
 
 const dict = {
-  hello: "hello", 
+  hello: "hello world", 
   world: "world", 
 }
 
-const inDict = {action: "hello", response: "world"}
+/* 
+ * j
+ * 
+ * @param: myParam
+ * @returns: return information
+ */
 
+ const foo = (arg1, arg2) => {
+    return arg1 + arg2;
+ }
 

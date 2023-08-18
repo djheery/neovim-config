@@ -65,16 +65,16 @@ lsp.on_attach(function(client, bufnr)
 end)
 
 lsp.setup()
-cmp.setup({
-  sources = {
-    { name = "nvim_lsp" }, 
-    {name = "luasnip" },
-  },
-  mapping = {
-    ['<C-f>'] = cmp_action.luasnip_jump_forward(), 
-    ['<C-b>'] = cmp_action.luasnip_jump_backward(), 
-  }
-})
+-- cmp.setup({
+--   sources = {
+--     { name = "nvim_lsp" }, 
+--     {name = "luasnip" },
+--   },
+--   mapping = {
+--     ['<C-f>'] = cmp_action.luasnip_jump_forward(), 
+--     ['<C-b>'] = cmp_action.luasnip_jump_backward(), 
+--   }
+-- })
 vim.diagnostic.config({
     virtual_text = true
 })

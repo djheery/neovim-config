@@ -25,6 +25,8 @@ return require('packer').startup(function(use)
 	    end,
       })
 
+    use('onsails/lspkind-nvim')
+    use('tpope/vim-surround')
     use('saadparwaiz1/cmp_luasnip')
     use('numToStr/Comment.nvim')
     use('rafamadriz/friendly-snippets') 
