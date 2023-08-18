@@ -38,18 +38,21 @@ end)
 ls.filetype_extend("javascriptreact", { 
   "javascript", 
   "js_comments", 
-  "javascriptreact"
+  "javascriptreact", 
+  "all_snips",
 })
 
 ls.filetype_extend("javascript", {
   "js_comments",
-  "javascript" 
+  "javascript", 
+  "all_snips",
 })
 
 ls.filetype_extend("typescript", {
   "js_comments",
   "javascript",
-  "typescript" 
+  "typescript", 
+  "all_snips", 
 })
 
 ls.filetype_extend("typescriptreact", {
@@ -57,5 +60,6 @@ ls.filetype_extend("typescriptreact", {
   "javascript",
   "typescript",
   "javascriptreact",
-  "typescriptreact" 
+  "typescriptreact", 
+  "all_snips",
 })

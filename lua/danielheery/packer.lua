@@ -37,6 +37,7 @@ return require('packer').startup(function(use)
     use('nvim-tree/nvim-web-devicons')
 	  use('mbbill/undotree')
 	  use('tpope/vim-fugitive')
+    use('christoomey/vim-tmux-navigator')
 
     use {
           'hrsh7th/nvim-cmp',
