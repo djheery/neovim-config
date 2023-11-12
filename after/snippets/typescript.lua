@@ -84,7 +84,7 @@ local _ttyp = s(
   fmt([[
     /*
      * {}
-    */
+     */
 
     export type {} = {}; 
   ]], {
@@ -94,9 +94,54 @@ local _ttyp = s(
   })
 )
 
-table.insert(autoSnippets, _ftconst); 
-table.insert(autoSnippets, _tinter); 
-table.insert(autoSnippets, _tenum); 
-table.insert(autoSnippets, _ttyp); 
+local _tpojo = s(
+  "_tpojo", 
+  fmt([[ 
+    /* A POJO for defining the allowable options for {} 
+     * 
+     * @param: {}  
+     * @param: {} 
+     */ 
+
+     export const {} = {{
+       {}: '{}', 
+       {}: '{}', 
+     }} as const; 
+
+     /* 
+      * A type for defining the option values of {} 
+      */ 
+
+     export type {} = ObjectKeys<typeof {}>; 
+
+     /* 
+      * A type for defining the option values of {}  
+      */ 
+
+     export type {} = ObjectValues<typeof {}>; 
+
+  ]], {
+    i(1, "MyPOJO"),
+    i(2, "OPTION_ONE"),
+    i(3, "OPTION_TWO"),
+    i(4, "MyPOJO"),
+    i(5, "OPTION_ONE"),
+    i(6, "OPTION_ONE"),
+    i(7, "OPTION_TWO"),
+    i(8, "OPTION_TWO"),
+    i(9, "MyPOJO"),
+    i(10, "MyPOJOKeys"),
+    i(11, "MyPOJO"),
+    i(12, "MyPOJO"),
+    i(13, "MyPOJOValues"),
+    i(14, "MyPOJO"),
+  })
+)
+
+table.insert(autoSnippets, _ftconst);
+table.insert(autoSnippets, _tinter);
+table.insert(autoSnippets, _tenum);
+table.insert(autoSnippets, _ttyp);
+table.insert(autoSnippets, _tpojo);
 
 return snippets, autoSnippets

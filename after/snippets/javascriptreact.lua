@@ -45,7 +45,7 @@ local _rcfe = s(
       return (
         <div className={{styles["foo"]}}>
           <span>{}</span>
-      </div>
+        </div>
       )
     }}
 
@@ -70,7 +70,7 @@ local _rcpe= s(
       return (
         <div className={{styles["foo"]}}>
           <h1>{}</h1>
-      </div>
+       </div>
       )
     }}
 
