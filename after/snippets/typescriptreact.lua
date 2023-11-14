@@ -38,7 +38,7 @@ local _rfct = s(
       return (
         <div className={{styles["foo"]}}>
           <span>{}</span>
-      </div>
+        </div>
       )
     }}
 
@@ -63,7 +63,7 @@ local _rcpt= s(
       return (
         <div className={{styles["foo"]}}>
           <h1>{}</h1>
-      </div>
+        </div>
       )
     }}
 
