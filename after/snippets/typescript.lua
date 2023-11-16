@@ -48,10 +48,10 @@ local _tinter = s(
      * @param: {} paramDescription
      */
 
-     export interface {} {{
-       {}, 
-       {},  
-     }}
+    export interface {} {{
+      {}, 
+      {},  
+    }}
   ]], {
     i(1, "Interface details"), 
     i(2, "paramName"), 
@@ -68,10 +68,10 @@ local _tenum = s(
      * Why are you using an enum?????
      */
 
-     export enum {} {{
-       {},
-       {}, 
-     }}
+    export enum {} {{
+      {},
+      {}, 
+    }}
   ]], {
     i(1, "EnumName"), 
     i(2, "FOO = 'FOO'"),
@@ -103,22 +103,22 @@ local _tpojo = s(
      * @param: {} 
      */ 
 
-     export const {} = {{
-       {}: '{}', 
-       {}: '{}', 
-     }} as const; 
+    export const {} = {{
+      {}: '{}', 
+      {}: '{}', 
+    }} as const; 
 
-     /* 
-      * A type for defining the option values of {} 
-      */ 
+    /* 
+     * A type for defining the option values of {} 
+     */ 
 
-     export type {} = ObjectKeys<typeof {}>; 
+    export type {} = ObjectKeys<typeof {}>; 
 
-     /* 
-      * A type for defining the option values of {}  
-      */ 
+    /* 
+     * A type for defining the option values of {}  
+     */ 
 
-     export type {} = ObjectValues<typeof {}>; 
+    export type {} = ObjectValues<typeof {}>; 
 
   ]], {
     i(1, "MyPOJO"),
