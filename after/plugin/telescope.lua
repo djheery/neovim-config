@@ -3,7 +3,7 @@ local ts = require('telescope');
 
 ts.setup({
   defaults = {
-    path_display = { "tail" },
+    path_display = { "truncate" },
     prompt_prefix = "  ",
     selection_caret = " 󰇷 ",
     borderchars = { "─", "", "─", "", "󰋅", "󰋅", "󰋅", "󰋅" },
