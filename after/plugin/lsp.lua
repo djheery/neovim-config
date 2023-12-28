@@ -13,6 +13,7 @@ lsp.ensure_installed({
   'rust_analyzer',
   'cssls',
   'prismals',
+  'gopls',
 })
 
 -- Fix Undefined global 'vim'
