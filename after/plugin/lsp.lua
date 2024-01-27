@@ -11,6 +11,7 @@ lsp.ensure_installed({
   'jdtls',
   'emmet_ls',
   'rust_analyzer',
+  'marksman',
   'cssls',
   'prismals',
   'gopls',
