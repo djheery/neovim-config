@@ -13,7 +13,7 @@ The base of this project was formed using theprimagens initial YouTube tutorial 
 ## Note 
 
 If you are new like I was, when cloning this repo it will break neovim because Packer trys to run the `after` folder
-before any of the dependencies are installed. So ensure you have packer installed, then rename the after folder to something like _after.
+before any of the dependencies are installed. So ensure you have packer installed, then rename the after folder to something like `_after`.
 
 This is to ensure it is not run on initial setup. Then call `:PackerSync` to install said the dependencies and you should be good to go 
 
@@ -21,13 +21,13 @@ Make sure to change `_after` back to `after`.
 
 There again you probably shouldn't use this repo to set your self up. 
 
-Instead use something like [kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim) or ThePrimagens tutorial [Zero to LSP](https://www.youtube.com/watch?v=w7i4amO_zaE&t=438s) - Although the later is maybe not so great for actually learning, just following along. 
+Instead use something like [kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim) or ThePrimagens tutorial [Zero to LSP](https://www.youtube.com/watch?v=w7i4amO_zaE&t=438s) - Although the latter is maybe not so great for actually learning, just following along. 
 
 ## Dependencies  
 
-- wget (for Mason) 
-- unzip (for Mason) 
-- Packer (Package Management) 
+- `wget` (for Mason) 
+- `unzip` (for Mason) 
+- `Packer` (Package Management) 
 
 ## Updates 
 
