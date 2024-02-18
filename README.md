@@ -23,7 +23,7 @@ There again **you probably shouldn't use this repo to set your self up**.
 
 Instead use something like [kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim) or ThePrimagens tutorial [Zero to LSP](https://www.youtube.com/watch?v=w7i4amO_zaE&t=438s) - Although the latter is maybe not so great for actually learning, just following along. 
 
-## Dependencies  
+## CLI Dependencies  
 
 - `wget` (for Mason) 
 - `unzip` (for Mason) 
