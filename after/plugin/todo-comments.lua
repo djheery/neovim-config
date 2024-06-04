@@ -7,10 +7,11 @@ tdc.setup({
      returns =  { icon = "󰌑", color = "#4169e1" },
      QUESTION = { icon = "", color = "#FFBF00" },
      WARNING = { icon = "", color = "#ED2939" },
-     ["MY_SPEC"] = { icon = "", color = "#f6fd22", alt = {"!!"} }
+     ["MY_SPEC"] = { icon = "", color = "#f6fd22", alt = {"!!"} },
+     ["TDL"] = { icon = " ", color = "#BA992f" }
  },
  highlight = {
-  multiline = false, 
+  multiline = false,
  },
 
 });
@@ -21,9 +22,10 @@ tdc.setup({
 -- @returns: this method returns 
 -- PERF: Performance 
 -- NOTE: This is a note 
--- WARNING: This is a warining
--- FIX:  Fix Me Please;
+-- !WARNING: This is a warining
+-- !FIX:  Fix Me Please;
 -- QUESTION: This is a question
--- TODO: Multi line disables
--- TODO: A Now todo
+-- >TODO: Multi line disables
+-- @TODO: A Now todo
 -- @param: 
+-- >TDL: my todo 

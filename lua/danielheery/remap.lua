@@ -46,5 +46,4 @@ vim.keymap.set("n", "<leader>_d", [[:%s/\<<C-r><C-w>\>/ /gI<Left><Left><Left>]])
 
 -- Exit insertion Remmap
 vim.keymap.set("i", "jj", "<Esc>")
-vim.keymap.set("i", "ddd", "<Esc>dd"); 
 
