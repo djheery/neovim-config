@@ -2,8 +2,6 @@
 
 This is my neovim config. This will always be in a state of flux, however; I am trying to limit the amount of updates that I do to this repo.
 
-This is because I do not want to get distracted ricing my experience at the cost of actually programming. 
-
 The base of this project was formed using theprimagens initial YouTube tutorial (Zero to LSP) and has since been adapted to add a few extra convinineces such as:
 
 - Some React/TypeScript snippets
