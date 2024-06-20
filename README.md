@@ -27,11 +27,4 @@ Instead use something like [kickstart.nvim](https://github.com/nvim-lua/kickstar
 - `unzip` (for Mason) 
 - `Packer` (Package Management) 
 
-## Updates 
-
-At some point I do want to come back and edit this whole config as I feel I am more to grips with what I need to do 
-to configure Neovim now and there are probably a few unecessary imports that are not being used that can be removed. 
-
-For now though - I can't be bothered and it's working fine. 
-
 
