@@ -27,4 +27,7 @@ Instead use something like [kickstart.nvim](https://github.com/nvim-lua/kickstar
 - `unzip` (for Mason) 
 - `Packer` (Package Management) 
 
+## Other Dependencies 
+
+- A font that supports icons set to your terminal default (I use Hack Nerd Font and its variants)
 
