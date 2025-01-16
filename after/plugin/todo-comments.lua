@@ -3,13 +3,14 @@ local tdc = require("todo-comments")
 tdc.setup({
   merge_keywords = true,
   keywords = {
+     FIX    = { alt = { "SMELL" } },
      param  = { icon = "@", color = "#4169e1" },
      returns =  { icon = "󰌑", color = "#4169e1" },
      QUESTION = { icon = "", color = "#FFBF00" },
      WARNING = { icon = "", color = "#ED2939" },
      ["MY_SPEC"] = { icon = "", color = "#f6fd22", alt = {"!!"} },
      ["TDL"] = { icon = " ", color = "#BA992f", alt = { "ff", "_TODO_" } },
-     example = { icon = "", color="#95D5B2" }
+     example = { icon = "", color="#95D5B2" },
  },
  highlight = {
   multiline = false,
@@ -30,10 +31,6 @@ tdc.setup({
 -- @TODO: A Now todo
 -- @param: 
 -- >TDL: my todo 
--- <TDL>: My TODO
--- [TODO]: 
--- [[: 
--- <___>: 
--- !TODO!: 
 -- _TODO_: 
 -- @example: hello 
+-- SMELL
